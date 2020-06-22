@@ -1,5 +1,3 @@
-# Learnings
+# Javascript
 
-Repo for all projects
-
-# Testing
+All Javascript triky questions and their implementations
