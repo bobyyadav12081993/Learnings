@@ -4,6 +4,7 @@ import { getColumnName } from './excel-column-name';
 import { nonRepeatingChar } from './non-repeating-character';
 import { checkIsSumTree } from './sum-tree';
 import { getModifiedArray } from './pushEleAtLast';
+import { twoSum } from './two-sum';
 
 checkIsSumTree();
 console.log(nonRepeatingChar('hello'));
@@ -15,6 +16,8 @@ console.log('working');
 
 let temp = [0, 1, 0, 3, 12];
 console.log(getModifiedArray(temp, 0));
+
+console.log(twoSum([1, 2, 3, 2, 0, 4], 4));
 
 class Stack {
   constructor() {
@@ -52,3 +55,25 @@ function countOfarr(arr, sum) {
   }
   return counter;
 }
+
+class Car {
+  static _def = {
+    brand: 'citroen',
+  };
+
+  constructor(conf = {}) {
+    console.log('initiated', conf);
+    this.config = Object.assign(Car._def, conf);
+  }
+
+  print() {
+    console.log(this.config.brand);
+  }
+}
+
+let car1 = new Car({ brand: 'chevrolet' });
+let car2 = new Car({ brand: 'ford' });
+let car3 = new Car();
+car1.print();
+car2.print();
+car3.print();
