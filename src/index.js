@@ -5,6 +5,8 @@ import { nonRepeatingChar } from './non-repeating-character';
 import { checkIsSumTree } from './sum-tree';
 import { getModifiedArray } from './pushEleAtLast';
 import { twoSum } from './two-sum';
+// import './reverse-word-modify';
+import './what-console';
 
 checkIsSumTree();
 console.log(nonRepeatingChar('hello'));

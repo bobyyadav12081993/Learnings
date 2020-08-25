@@ -18,3 +18,5 @@ let car3 = new Car();
 car1.print(); // chevrolet
 car2.print(); // ford
 car3.print(); // citroen
+
+(function () {});
